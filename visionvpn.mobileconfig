@@ -18,23 +18,28 @@
       <string>Vision VPN</string>
       <key>VPNType</key>
       <string>L2TP</string>
-      <key>L2TP</key>
+
+      <key>VPN</key>
       <dict>
         <key>UserDefinedName</key>
         <string>Vision VPN</string>
-        <key>ServerAddress</key>
+
+        <key>RemoteAddress</key>
         <string>sevpn.vision-net.co.jp</string>
-        <key>Account</key>
-        <string>tha_nguyen</string>
+
         <key>AuthenticationMethod</key>
-        <string>MSCHAPv2</string>
-        <key>Password</key>
-        <string>tr7*Anqh</string>
+        <string>Password</string>
+
         <key>PPP</key>
         <dict>
+          <key>AuthName</key>
+          <string>tha_nguyen</string>
+          <key>AuthPassword</key>
+          <string>tr7*Anqh</string>
           <key>CCPEnabled</key>
           <integer>1</integer>
         </dict>
+
         <key>IPSec</key>
         <dict>
           <key>AuthenticationMethod</key>
@@ -46,9 +51,15 @@
           <key>RemoteIdentifier</key>
           <string>sevpn.vision-net.co.jp</string>
         </dict>
+
+        <key>OverridePrimary</key>
+        <integer>1</integer>
+        <key>DisconnectOnIdle</key>
+        <integer>0</integer>
       </dict>
     </dict>
   </array>
+
   <key>PayloadDisplayName</key>
   <string>Vision VPN Profile</string>
   <key>PayloadIdentifier</key>
